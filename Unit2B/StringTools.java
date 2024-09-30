@@ -27,7 +27,7 @@ public String middleThree(String str2)
 //solution method for problem 4
 public String swapLastTwo(String str3)
 {
-    return str3.substring(0,str3.length()-2)+str3.substring(str3.length()-1)+str3.substring(str3.length()-2);
+    return str3.substring(0,str3.length()-2)+str3.substring(str3.length()-2,str3.length()-1);
 }
 //solution method for porblem 5
 public boolean frontAgain (String str, int n)
