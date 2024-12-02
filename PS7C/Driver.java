@@ -9,13 +9,11 @@ import java.util.*;
 public class Driver
 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter an integer n to find all prime numbers up to n. ");
-        int n = scanner.nextInt();
-        ArrayList<Integer> primes = Sieve.findPrimes(n);
-        System.out.println("Prime numbers up to " + n + ": " + primes);
-        System.out.println("Goldbach Conjecture");
-        Goldbach.goldbach(n); 
-    
+        System.out.println(Sieve.findPrimes(100));
+        Goldbach.goldbach(100);
+        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(9, 9, 9));  
+        ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(1, 0, 1));  
+        ArrayList<Integer> result = BigInt.BigInts(list1, list2);
+        System.out.println(result);
     }
 }
